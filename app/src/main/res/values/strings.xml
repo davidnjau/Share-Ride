@@ -7,7 +7,11 @@
     <string name="very_strong">very_strong</string>
 
     <string name="acl">http://192.168.81.80:1400/</string>
+    <string name="share_ride">http://192.168.81.80:1401/</string>
 
     <string name="public_user">PUBLICUSER</string>
+
+    <string name="my_routes">My Routes</string>
+    <string name="my_rides">My Rides</string>
 
 </resources>

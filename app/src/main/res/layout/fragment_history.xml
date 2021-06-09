@@ -107,9 +107,34 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <RadioGroup
+            android:id="@+id/radioHistory"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RadioButton
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:buttonTint="@color/white"
+                android:text="@string/my_rides"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <RadioButton
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:buttonTint="@color/white"
+                android:text="@string/my_routes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RadioGroup>
+
         <androidx.recyclerview.widget.RecyclerView
             android:layout_marginBottom="50dp"
-            tools:listitem="@layout/card_view_history"
+            tools:listitem="@layout/card_view_history_routes"
             android:layout_width="match_parent"
             android:id="@+id/recyclerView"
             android:layout_height="match_parent"/>

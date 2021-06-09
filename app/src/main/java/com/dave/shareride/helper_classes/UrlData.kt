@@ -5,7 +5,8 @@ import com.dave.shareride.R
 
 enum class UrlData(var message: Int) {
 
-    BASE_URL_ACL(R.string.acl)
+    BASE_URL_ACL(R.string.acl),
+    BASE_URL_SHARE_RIDE(R.string.share_ride)
 
 
 }

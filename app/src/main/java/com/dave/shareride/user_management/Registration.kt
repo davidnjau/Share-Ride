@@ -1,20 +1,15 @@
 package com.dave.shareride.user_management
 
-import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
-import android.util.Log
 import android.widget.RadioButton
-import android.widget.RadioGroup
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.dave.shareride.R
 import com.dave.shareride.helper_classes.CustomDialogToast
-import com.dave.shareride.helper_classes.Formatter
 import com.dave.shareride.helper_classes.TextValidator
-import com.dave.shareride.network_requests.RetrofitCallsAuthentication
+import com.dave.shareride.network_requests.calls.RetrofitCallsAuthentication
 import com.dave.shareride.network_requests.classes.UserRegister
 import kotlinx.android.synthetic.main.activity_registration.*
 

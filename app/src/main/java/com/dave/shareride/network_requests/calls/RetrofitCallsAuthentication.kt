@@ -1,21 +1,14 @@
-package com.dave.shareride.network_requests
+package com.dave.shareride.network_requests.calls
 
 import android.app.Activity
 import android.app.ProgressDialog
 import android.content.Context
-import android.content.DialogInterface
 import android.content.Intent
 import android.content.SharedPreferences
 import android.util.Log
-import android.view.LayoutInflater
-import android.view.View
-import android.widget.EditText
-import android.widget.Toast
-import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.dave.shareride.R
 import com.dave.shareride.helper_classes.CustomDialogToast
-import com.dave.shareride.helper_classes.Formatter
 import com.dave.shareride.helper_classes.SharedPreferenceStorage
 import com.dave.shareride.helper_classes.UrlData
 import com.dave.shareride.network_requests.classes.*

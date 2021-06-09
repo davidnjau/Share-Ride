@@ -5,10 +5,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
 import com.dave.shareride.R
-import com.dave.shareride.network_requests.RetrofitCallsAuthentication
+import com.dave.shareride.network_requests.calls.RetrofitCallsAuthentication
 import com.dave.shareride.network_requests.classes.UserLogin
 import kotlinx.android.synthetic.main.activity_login.*
-import kotlinx.android.synthetic.main.activity_registration.*
 
 class Login : AppCompatActivity() {
 

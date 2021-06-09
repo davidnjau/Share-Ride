@@ -22,8 +22,9 @@ interface Interface {
     @POST("/api/v1/accounts/auth/resend-otp")
     fun resendOtp(@Body userResendOtp: UserResendOtp): Call<SuccessLogin>
 
-//    @POST("/auth/otp-verify/")
-//    fun otpVerify(@Body otpVerify: OtpVerify): Call<SuccessOtpVerify>
+    @GET("/api/v1/route/driver?filter=ONGOING")
+    fun getMyRoutes(@HeaderMap headers: Map<String, String>): Call<SuccessMyRoutes>
+
 
 
 

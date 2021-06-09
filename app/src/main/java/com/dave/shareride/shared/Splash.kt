@@ -21,10 +21,25 @@ class Splash : AppCompatActivity() {
         // we used the postDelayed(Runnable, time) method
         // to send a message with a delayed time.
         Handler().postDelayed({
-            val intent = Intent(this, Registration::class.java)
-            startActivity(intent)
-            finish()
+
+            val preferences = this.getSharedPreferences(resources.getString(R.string.app_name), MODE_PRIVATE)
+            val boolValue: Boolean = preferences.getBoolean("isLoggedIn", false)
+            if (boolValue){
+
+                val intent = Intent(this, MainActivity::class.java)
+                startActivity(intent)
+                finish()
+
+            }else{
+                val intent = Intent(this, Registration::class.java)
+                startActivity(intent)
+                finish()
+            }
+
+
         }, 3000)
 
     }
+
+
 }

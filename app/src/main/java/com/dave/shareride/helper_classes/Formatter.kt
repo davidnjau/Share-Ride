@@ -2,11 +2,13 @@ package com.dave.shareride.helper_classes
 
 import android.content.Context
 import android.text.TextUtils
+import com.dave.shareride.R
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
 import org.json.JSONObject
+import java.util.HashMap
 
 class Formatter {
 
@@ -50,6 +52,19 @@ class Formatter {
         return value.substring(1, lengthFilter - 1)
     }
 
+    fun getHeaders(context: Context): HashMap<String, String> {
 
+        val stringStringMap = HashMap<String, String>()
+
+        val preferences = SharedPreferenceStorage(context, context.resources.getString(R.string.app_name))
+        val getVerify: HashMap<String, String> = preferences.getSavedData("profile")
+        val access_token = getVerify["access_token"]
+        val jwt = getVerify["jwt"]
+
+        stringStringMap["Authorization"] = " Bearer $access_token"
+        stringStringMap["JWTAUTH"] = " Bearer $jwt"
+
+        return stringStringMap
+    }
 
 }

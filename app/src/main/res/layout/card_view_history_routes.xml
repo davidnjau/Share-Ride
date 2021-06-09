@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="20dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginStart="10dp"
+    android:background="@drawable/back_outline"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:id="@+id/tvDestination"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:text="Nakuru"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textColor="@color/white"
+                android:id="@+id/tvRouteStatus"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:text="ONGOING"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textColor="@color/white"
+                android:id="@+id/tvDepartureTime"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:text="Departure Time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textColor="@color/white"
+                android:id="@+id/tvPickUpNumber"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:text="5 pick points"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvVehicleModel"
+                android:textStyle="bold"
+                android:textColor="@color/primaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:text="Mazda Demio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvRegistrationNumber"
+                android:textColor="@color/primary"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:text="KCB 898X"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvNumberSlots"
+                android:textColor="@color/primary"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:text="4 Slots"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
