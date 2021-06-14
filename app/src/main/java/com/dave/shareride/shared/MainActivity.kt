@@ -13,6 +13,7 @@ import androidx.core.content.ContextCompat
 import com.dave.shareride.R
 import com.dave.shareride.shared.bottom_navigation.*
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import kotlinx.android.synthetic.main.fragment_home.*
 import java.util.*
 
 
@@ -104,6 +105,8 @@ class MainActivity : AppCompatActivity() {
         }
         
     }
+
+
 
     override fun onRequestPermissionsResult(
         requestCode: Int,

@@ -1,18 +1,22 @@
 package com.dave.shareride.shared.bottom_navigation
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import androidx.fragment.app.Fragment
 import com.dave.shareride.R
+import com.dave.shareride.drivers.CreateRoute
+import com.google.android.material.bottomsheet.BottomSheetDialog
 import kotlinx.android.synthetic.main.fragment_home.*
+import kotlinx.android.synthetic.main.fragment_home.view.*
 import org.osmdroid.events.MapEventsReceiver
 import org.osmdroid.tileprovider.tilesource.TileSourceFactory
 import org.osmdroid.util.GeoPoint
 import org.osmdroid.views.MapController
 import org.osmdroid.views.MapView
-import org.osmdroid.views.Projection
 import org.osmdroid.views.overlay.*
 import java.util.*
 
@@ -46,9 +50,17 @@ class Fragment_Home : Fragment() {
         val overlayEvents = MapEventsOverlay(requireActivity(), mReceive)
         map.overlays.add(overlayEvents)
 
+        rootView.findViewById<Button>(R.id.btnCreateRide).setOnClickListener {
+
+            val intent = Intent(requireActivity(), CreateRoute::class.java)
+            startActivity(intent)
+
+        }
 
         return rootView
     }
+
+
 
     private fun createPoint(geoPoint: GeoPoint) {
 
