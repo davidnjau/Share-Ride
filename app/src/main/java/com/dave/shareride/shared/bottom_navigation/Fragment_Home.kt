@@ -8,10 +8,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.Fragment
 import com.dave.shareride.R
-import com.dave.shareride.drivers.CreateRoute
-import com.google.android.material.bottomsheet.BottomSheetDialog
-import kotlinx.android.synthetic.main.fragment_home.*
-import kotlinx.android.synthetic.main.fragment_home.view.*
+import com.dave.shareride.drivers.ShowRoute
 import org.osmdroid.events.MapEventsReceiver
 import org.osmdroid.tileprovider.tilesource.TileSourceFactory
 import org.osmdroid.util.GeoPoint
@@ -52,7 +49,7 @@ class Fragment_Home : Fragment() {
 
         rootView.findViewById<Button>(R.id.btnCreateRide).setOnClickListener {
 
-            val intent = Intent(requireActivity(), CreateRoute::class.java)
+            val intent = Intent(requireActivity(), ShowRoute::class.java)
             startActivity(intent)
 
         }

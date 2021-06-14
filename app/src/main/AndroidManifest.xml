@@ -19,12 +19,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ShareRide"
         android:usesCleartextTraffic="true">
-        <activity android:name=".drivers.CreateRoute"
+        <activity android:name=".drivers.CreatePickUps"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
         <activity
+            android:name=".drivers.ShowRoute"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
             android:name=".user_management.VerifyOtp"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
-            android:noHistory="true"/>
+            android:noHistory="true"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity
             android:name=".shared.Splash"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">

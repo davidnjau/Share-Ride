@@ -34,7 +34,7 @@ import kotlinx.coroutines.launch
 class Fragment_History : Fragment() {
 
     lateinit var radioButton: RadioButton
-    private var retrofitCallsAuthentication: RetrofitCallsAccount = RetrofitCallsAccount()
+    private var retrofitCalls: RetrofitCallsAccount = RetrofitCallsAccount()
     private lateinit var recyclerView : RecyclerView
     private lateinit var layoutManager: RecyclerView.LayoutManager
 
@@ -59,7 +59,7 @@ class Fragment_History : Fragment() {
             if (historyType == resources.getString(R.string.my_routes)){
 
                 GlobalScope.launch(Dispatchers.IO){
-                    val routeList =  retrofitCallsAuthentication.getMyRoutes(requireActivity())
+                    val routeList =  retrofitCalls.getMyRoutes(requireActivity())
                     CoroutineScope(Dispatchers.Main).launch {
                         val routesHistoryAdapter = RoutesHistoryAdapter(routeList, requireActivity())
                         recyclerView.adapter = routesHistoryAdapter
